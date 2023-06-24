@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="Title">Insert a new supplier</h1>
+    <div class="design">
+        <form action="newSupplier.php" method="post">
+            <div style="display: flex; column-gap: 80px;">
+                <label for="Cname">Company Name</label>
+                <input type="text" id="Cname" name="Cname" placeholder="Company Name" required>
+            </div>
+            <div style="display: flex; column-gap: 104px;">
+                <label for="Sdate">Supply Date</label>
+                <input type="date" id="Sdate" name="Sdate" placeholder="Supply Date" required>
+            </div>
+            <div style="display: flex; column-gap: 91px;">
+                <label for="PhoneNum">Phone number</label>
+                <input type="number" id="PhoneNum" name="PhoneNum" placeholder="Phone Number" required>
+            </div>
+            <div style="display:flex; align-items: center; justify-content: center;">
+                <input type="submit" style="width: 100%; background-color: #FDC52C;">
+            </div>
+        </form>
+            <a href="warehouse.php" ><button style="width: 100%; background-color: #FDC52C;">Return to main page</button></a>
+    </div>
+</body>
+
+<style>
+    body{
+    background: linear-gradient(90deg,#cd122d,#154284);
+    }
+    .design{
+        display: grid;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+    }
+    form{
+        margin-top:5px;
+        display: grid;
+        display:grid;
+        row-gap: 20px;
+    }
+    label{
+        color: #FDC52C;
+    }
+    h1 {
+    text-align:center;
+    margin-top: 7%;
+    color: #ffbb00;
+    }
+</style>
+</html>

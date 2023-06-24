@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="Title">Insert a product</h1>
+    <div class="design">
+        <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+        <form action="insert.php" method="post" target="dummyframe">
+            <div style="display: flex; column-gap: 66px;">
+                <label for="Sid">Supplier ID</label>
+                <input type="number" id="Sid" name="Sid" placeholder="Supplier ID" required>
+            </div>
+            <div style="display: flex; column-gap: 50px;">
+                <label for="Pname">Product Name</label>
+                <input type="text" id="Pname" name="Pname" placeholder="Product Name" required>
+            </div>
+            <div style="display: flex; column-gap: 38px;">
+                <label for="Pdate">Production Date</label>
+                <input type="date" id="Pdate" name="Pdate" placeholder="Production Date" required>
+            </div>
+            <div style="display: flex; column-gap: 64px;">
+                <label for="Edate">Expiry Date</label>
+                <input type="date" id="Edate" name="Edate" required>
+            </div>
+            <div style="display: flex; column-gap: 83px;">
+                <label for="Category">Category</label>
+                <input type="text" id="Category" name="Category" placeholder="Category" required>
+            </div>
+            <div style="display: flex; column-gap: 81px;">
+                <label for="Sprice">Sell price</label>
+                <input type="number" id="Sprice" name="Sprice" placeholder="Sell Price" required>
+            </div>
+            <div style="display: flex; column-gap: 48px;">
+                <label for="Pprice">Purchase price</label>
+                <input type="number" id="Pprice" name="Pprice" placeholder="Purchase Price" required>
+            </div>
+            <div style="display: flex; column-gap: 90px;">
+                <label for="Amount">Amount</label>
+                <input type="number" id="Amount" name="Amount" placeholder="Amount" required>
+            </div>
+            <div style="display:flex; align-items: center; justify-content: center;">
+                <input type="submit" style="width: 100%; background-color: #FDC52C;">
+            </div>
+        </form>
+            <a href="warehouse.php" ><button style="width: 100%; background-color: #FDC52C;">Return to main page</button></a>
+            <a href="insert.php" ><button style="width: 100%; background-color: #FDC52C;">Supplier Cart</button></a>
+    </div>
+</body>
+
+<style>
+    body{
+    background: linear-gradient(90deg,#cd122d,#154284);
+    }
+    .design{
+        display: grid;
+        position: absolute;
+        top:60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+    }
+    form{
+        margin-top:5px;
+        display: grid;
+        display:grid;
+        row-gap: 20px;
+    }
+    label{
+        color: #FDC52C;
+    }
+    h1 {
+    text-align:center;
+    margin-top: 7%;
+    color: #ffbb00;
+    }
+</style>
+</html>

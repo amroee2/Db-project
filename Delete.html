@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Delete a product</h1>
+    <div class="design">
+        <form action="Delete.php" method="post">
+            <div style="display: flex; column-gap: 10px;">
+            <label for="id">Please enter product ID</label>
+            <input type="number" id="id" name="id" required>
+        </div>
+            <input type="submit" style="background-color: #FDC52C;">
+        </form>
+        <a href="index.php" ><button style="width: 100%; background-color: #FDC52C;">Return to main page</button></a>
+    </div>
+</body>
+<style>
+    body{
+    background: linear-gradient(90deg,#cd122d,#154284);
+    }
+    .design{
+        display: grid;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+    }
+    form{
+        margin-top:5px;
+        display: grid;
+        display:grid;
+        row-gap: 20px;
+    }
+    label{
+        color: #FDC52C;
+    }
+    h1 {
+    text-align:center;
+    margin-top: 15%;
+    color: #ffbb00;
+    }
+</style>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        #Pname{
+            visibility: hidden;
+        }
+        #Pdate{
+            visibility: hidden;
+        }
+        #Edate{
+            visibility: hidden;
+        }
+        #Category{
+            visibility: hidden;
+        }
+        #Sprice{
+            visibility: hidden;
+        }
+        #Pprice{
+            visibility: hidden;
+        }
+        #Amount{
+            visibility: hidden;
+        }
+    </style>
+    <h1>Update product information</h1>
+<body>
+    <div class="design">
+    <form action="Update.php" method="post">
+    <div style="display: flex; column-gap: 20px;">
+        <label for="pID">Enter product id</label>
+        <input type ="number" id="pid" name="pid" required>
+    </div>
+    <div style="display: flex; column-gap: 20px;">
+   <label for="select">Select:</label>
+   <select name="select" id="select">
+      <option value="Product Name">Product Name</option>
+      <option value="pDate">Product Production Date</option>
+      <option value="eDate">Product Expiry Date</option>
+      <option value="Category">Category</option>
+      <option value="Sprice">Sell price</option>
+      <option value="Pprice">Purchase price</option>
+      <option value="Amount">Amount</option>
+   </select>
+</div>
+    <div id="Pname">
+        <label for="FinalProductName">Enter new product name</label>
+        <input type="text" id="FinalProductName" name="FinalProductName">
+    </div>
+    <div id="Pdate">
+        <label for="FinalProductDate">Enter new production date</label>
+        <input type="date" id="FinalProductDate" name="FinalProductDate">
+    </div>
+    <div id="Edate">
+        <label for="FinalExpiryDate">Enter new expiry date</label>
+        <input type="date" id="FinalExpiryDate" name="FinalExpiryDate">
+    </div>
+    <div id="Category">
+        <label for="FinalCategory">Enter new category</label>
+        <input type="text" id="FinalCategory" name="FinalCategory">
+    </div>
+    <div id="Sprice">
+        <label for="FinalSprice">Enter new sell price</label>
+        <input type="number" id="FinalSprice" name="FinalSprice">
+    </div>
+    <div id="Pprice">
+        <label for="FinalPprice">Enter new purchase price</label>
+        <input type="number" id="FinalPprice" name="FinalPprice">
+    </div>
+    <div id="Amount">
+        <label for="Final Amount">Enter new amount</label>
+        <input type="number" id="FinalAmount" name="FinalAmount">
+    </div>
+    <div style="display:flex; align-items: center; justify-content: center;">
+        <input type="submit" style="width: 100%; background-color: #FDC52C;">
+    </div>
+</form>
+    <a href="index.php" ><button style="width: 100%; background-color: #FDC52C;">Return to main page</button></a>
+</div>
+   <script>
+      const el = document.getElementById('select');
+      const box1 = document.getElementById('Pname');
+      const box2 = document.getElementById('Pdate');
+      const box3 = document.getElementById('Edate');
+      const box4 = document.getElementById('Category');
+      const box5 = document.getElementById('Sprice');
+      const box6 = document.getElementById('Pprice');
+      const box7 = document.getElementById('Amount');
+      el.addEventListener('change', function handleChange(event) {
+         if (event.target.value === 'Product Name') {
+            box1.style.visibility = 'visible';
+         }
+         if (event.target.value === 'pDate') {
+            box2.style.visibility = 'visible';
+         }
+         if (event.target.value === 'eDate') {
+            box3.style.visibility = 'visible';
+         }
+         if (event.target.value === 'Category') {
+            box4.style.visibility = 'visible';
+         }
+         if (event.target.value === 'Sprice') {
+            box5.style.visibility = 'visible';
+         }
+         if (event.target.value === 'Pprice') {
+            box6.style.visibility = 'visible';
+         }
+         if (event.target.value === 'Amount') {
+            box7.style.visibility = 'visible';
+         }
+      });
+   </script>
+</body>
+<style>
+    body{
+    background: linear-gradient(90deg,#cd122d,#154284);
+    }
+    .design{
+        display: grid;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+    }
+    form{
+        margin-top:5px;
+        display: grid;
+        display:grid;
+        row-gap: 20px;
+    }
+    label{
+        color: #FDC52C;
+    }
+    h1 {
+    text-align:center;
+    color: #ffbb00;
+    }
+</style>
+</html>
